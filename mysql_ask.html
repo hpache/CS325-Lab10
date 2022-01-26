@@ -1,0 +1,38 @@
+<!--
+    File: mysql_ask.html
+    Name: Henry Pacheco Cachon
+    Class: CS325, January 2022
+    Lab: 10
+    Due: 25 January 2022
+-->
+
+<!DOCTYPE html>
+
+<html lang="EN">
+
+    <head>
+        <title> A Prettier MySQL Query Page </title>
+        <link rel="stylesheet" href="mysql_ask.css" type="text/css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="submit.js"></script>
+    </head>
+
+    <body>
+
+        <div class="container">
+            <p id="command-out"><strong></strong></p>
+            <div class="sqlBox" id="table-container"></div>
+            <div class="submitBox">
+                <form id="submit-mysql-query" action="submit.php" method="post">
+                    <fieldset>
+                        <legend> Type in MYSQL Query </legend>
+                        <textarea id="query-text"></textarea> <br> <br>
+                        <input type="submit" value="submit"/> <br>
+                        Limit 10: <input type="checkbox" id="limit"/>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </body>
+
+</html>

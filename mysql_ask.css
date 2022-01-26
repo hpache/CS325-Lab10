@@ -1,0 +1,99 @@
+/*
+    File: mysql_ask.css
+    Name: Henry Pacheco Cachon
+    Class: CS325, January 2022
+    Lab: 10
+    Due: 25 January 2022
+*/
+
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.container {
+    grid-row: 1;
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 5px;
+    justify-items: center;
+}
+
+p#command-out {
+    grid-row: 1;
+    grid-column: 2/3;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15pt;
+}
+
+.sqlBox{
+    grid-row: 2;
+    grid-column: 2;
+
+    width: 500px;
+}
+
+.submitBox{
+    grid-row: 3;
+    grid-column: 2/3;
+}
+
+form {
+    width: 500px;
+    height: 150px;
+}
+
+textarea {
+    width: 450px;
+}
+
+fieldset {
+    background-color: dodgerblue;
+}
+
+input[type=checkbox]{
+    text-align: right;
+}
+
+input[type=submit]{
+    background-color: limegreen;
+    border: 1px limegreen solid;
+    color: white;
+    transition-duration: 0.4s;
+}
+
+input[type=submit]:hover{
+    background-color: white;
+    border: 1px white solid;
+    color: limegreen;
+}
+
+legend {
+    border: 1px black solid;
+    background-color: dodgerblue;
+}
+
+table, th, td{
+    border: 1px black solid;
+}
+
+table {
+    width: 100%;
+}
+
+.number {
+    text-align: right;
+}
+
+.word {
+    text-align: left;
+}
+
+.error{
+    color: red;
+}
